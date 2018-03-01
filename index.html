@@ -1,15 +1,14 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
         <title>五子棋</title>
         <link rel="stylesheet" href="css/gobangstyle.css">
     </head>
     <body>
         <h3 id="result-wrap">~~休闲娱乐五子棋~~</h3>
-        <audio id="bgm" autoplay="autoplay"></audio>
-        <canvas id="chess" width="450px" height="450px"></canvas>
-        <div class="btn-wrap">
+	<div class="btn-wrap">
             <div id='restart' class="restart">
                 <span>重新开始</span>
             </div>
@@ -20,7 +19,9 @@
                 <span>撤销悔棋</span>
             </div>
         </div>
+        <audio id="bgm" autoplay="autoplay"></audio>
+        <canvas id="chess" width="450px" height="450px"></canvas>
+	<script src="js/gobangAI.js"></script>
         <script src="js/bgmlist.js"></script>
-        <script src="js/gobangAI.js"></script>
     </body>
 </html>

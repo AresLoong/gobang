@@ -1,4 +1,4 @@
-var over = false;
+﻿var over = false;
 var me = true; //我
 var _nowi = 0, _nowj = 0; //记录自己下棋的坐标
 var _compi = 0, _compj = 0; //记录计算机当前下棋的坐标
@@ -77,7 +77,7 @@ for(var i = 0; i < count; i++){
 var chess = document.getElementById("chess");
 var context = chess.getContext('2d');
 
-context.strokeStyle = '#bfbfbf'; //边框颜色
+context.strokeStyle = 'rgba(0,0,0,0)'; //边框颜色
 
 var backbtn = document.getElementById("goback");
 var returnbtn = document.getElementById("return");
@@ -117,7 +117,7 @@ chess.onclick = function(e){
                 computerWin[k] = 6;//这个位置对方不可能赢了
                 if(myWin[k] == 5){
                     // window.alert('你赢了');
-                    resultTxt.innerHTML = '这智商可以的竟然赢了~~';
+                    resultTxt.innerHTML = '哇塞666，恭喜恭喜你赢啦~~~';
                     over = true;
                 }
             }
@@ -172,7 +172,7 @@ returnbtn.onclick = function(e){
             computerWin[k] = 6;//这个位置对方不可能赢
         }
         if(myWin[k] == 5){
-            resultTxt.innerHTML = '这智商可以的竟然赢了~~';
+            resultTxt.innerHTML = '哇塞666，恭喜恭喜你赢啦~~~';
             over = true;
         }
     }
